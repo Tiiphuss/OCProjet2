@@ -121,6 +121,41 @@ a {
     margin-bottom: 5px;
 }
 
+.LienLogo img {
+    height: 35%;
+    width: 35%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.AHover:hover {
+    color: blue;
+    border-top: 2px solid blue;
+    padding-top: 6px;
+}
+
+.HebHover:hover {
+    color:blue;
+    border-top: 2px solid blue;
+    padding-top: 6px;
+}
+
+
 
 
 
@@ -163,5 +198,23 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .AHover:hover {
+        color: blue;
+        border-top: 0px solid transparent;
+        border-bottom: 2px solid blue;
+        padding-bottom: 6px;
+    }
+
+    .HebHover:hover {
+        color: blue;
+        border-top: 0px solid transparent;
+        border-bottom: 2px solid blue;
+        padding-bottom: 6px;
+    }
+   
+   
+   
     /* ... */
 }
+
+
