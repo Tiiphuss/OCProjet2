@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .main-container {
@@ -76,6 +77,10 @@ a {
     width: 65%;
 }
 
+.hebergements-cards a {
+    width: 31%;
+}
+
 .hebergements-cards{  
     display: flex;
     justify-content: space-between;
@@ -97,7 +102,6 @@ a {
 }
 
 .hebergements-cards .card {
-    width: 15em;
     display: flex;
     flex-direction: column;
     margin-top: 33px;
@@ -186,10 +190,14 @@ h3 span {
 
 .LienLogo img {
     height: 35%;
-    width: 35%;
-    margin-left: 30px;                                                  /*Logo Booki cliquable*/
+    width: 35%;                                                  /*Logo Booki cliquable*/
     margin-bottom: 30px;
     margin-top: 10px;
+    margin-left: 0px;
+}
+
+header a {
+    margin-top: 15px;
 }
 
 header {
@@ -318,6 +326,7 @@ form input {
 .Activites-Marseille {
     margin-top: 70px;
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 
@@ -325,7 +334,6 @@ form input {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 19em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -334,6 +342,10 @@ form input {
     justify-content: space-between;
     margin-top: 40px;
     
+}
+
+.Activites-Cards a {
+    width: 23%;
 }
 
 .Activites-Cards .carte {
@@ -414,22 +426,103 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .Activites-Cards .carte {
+        height: 100%;
+    }
+    
+    .Activites-Cards img {
+        height: 200px;
+    }
+
+    .Assistance {
+        margin-right: 100px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .AHover:hover {
-        color: blue;
-        border-top: 0px solid transparent;                               /*Coloration bleue Hover "Activités" en DESSOUS pour les portables*/
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .Activites-Cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .Activites-Marseille {
+        margin-left: 0px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #f3f3f3;
+    }
+
+    header a {
+        width: 20%;
+        
+    }
+
+    nav {
+        gap: 0px;
+        width: 100%;
+
+    }
+
+    nav a {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+
+    .HebHover {
+        font-size: large;
+        margin-left: 35%;
+    }
+
+    .AHover {
+        font-size: large;
+        margin-left: 40%;
+    }
+
+    form button {
+        border-radius: 10px 10px 10px 10px;
+        right: 15px;
+    }
+    
+    .Filtres {
+        flex-direction: column;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    nav a:hover {
+        color: blue;                             /*Coloration bleue Hover "Activités" en DESSOUS pour les portables*/
         border-bottom: 2px solid blue;
-        padding-bottom: 6px;
+        padding-bottom: -1px;
     }
 
     .HebHover:hover {
         color: blue;
         border-top: 0px solid transparent;                               /*Coloration bleue Hover "Hébergements" en DESSOUS pour les portables*/
-        border-bottom: 2px solid blue;
-        padding-bottom: 6px;
+    }
+
+    .AHover:hover {
+        color: blue;
+        border-top: 0px solid transparent;                               /*Coloration bleue Hover "Hébergements" en DESSOUS pour les portables*/
     }
 
     button span {
@@ -446,6 +539,19 @@ footer {
         height: 3em;
         width: 3em;
     }
+
+    .LienLogo img {
+        width: 100%;
+    }
+
+    main {
+        margin-left: 40px;
+    }
+
+    .main-container {
+        padding: 0px;
+    }
+
 
 
    
