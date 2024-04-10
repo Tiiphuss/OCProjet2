@@ -219,13 +219,13 @@ nav {
 .AHover:hover {
     color: blue;
     border-top: 2px solid blue;                                       /*Coloration bleue Hover "Activités"*/
-    padding-top: 6px;
+    padding-top: 13px;
 }
 
 .HebHover:hover {
     color:blue;
     border-top: 2px solid blue;                                       /*Coloration bleue Hover "Hébergements"*/
-    padding-top: 6px;
+    padding-top: 13px;
 }
 
 .Texte_main {
