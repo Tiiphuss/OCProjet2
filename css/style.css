@@ -286,12 +286,16 @@ form input {
 .Filtres {
     margin-top: 40px;
     margin-bottom: 20px;
-    margin-right: 2em;
     display: flex;
     gap: 20px;
 }
 
-.Filtres button {
+.Filtres_bouton {
+    display: flex;
+    gap: 20px;
+}
+
+.Filtres_bouton button {
     background-color: white;
     border-radius: 30px 30px 30px 30px;
     border: 2px solid #dcdcdc;
@@ -440,6 +444,10 @@ footer {
     .Assistance {
         margin-right: 100px;
     }
+
+    .Filtres {
+       flex-direction: column; 
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -545,6 +553,11 @@ footer {
         margin-left: 20px;
     }
 
+    .Filtres_bouton {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .populaires-cards {
         flex-direction: column;
         justify-content: space-between;
@@ -629,10 +642,6 @@ footer {
     .Phrase {
         margin-bottom: 0px;
         margin-left: 20px;
-    }
-
-    .populaires-title {
-        
     }
 
     .Apropos {
